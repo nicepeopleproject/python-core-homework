@@ -19,6 +19,7 @@ def build_roles_tree(mapping):
             role_dict["id"] = roles[role_id]["id"]
             role_dict["text"] = roles[role_id]["name"]
             category_items.append(role_dict)
+        category_dict['items'] = category_items
         mapped_categories.append(category_dict)
     tree["categories"] = mapped_categories
     return tree
